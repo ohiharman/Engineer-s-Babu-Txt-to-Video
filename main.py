@@ -163,7 +163,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["Engineer","upload"]) )
+@bot.on_message(filters.command(["Enger","ghyig"]) )
 async def txt_handler(bot: Client, m: Message):
     await m.delete()
     
