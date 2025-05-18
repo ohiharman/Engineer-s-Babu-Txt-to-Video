@@ -319,6 +319,10 @@ async def txt_handler(bot: Client, m: Message):
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
 
+            elif "d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
+                vid_id =  url.split('/')[-2]
+                url = f"https://anonymousrajputplayer-9ab2f2730a02.herokuapp.com/pw?url={url}&token={raw_text4}"
+
             elif "allenplus" in url or "player.vimeo" in url :
              if "controller/videoplay" in url :
               url0 = "https://player.vimeo.com/video/" + url.split("videocode=")[1].split("&videohash=")[0]
